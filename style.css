@@ -5,7 +5,8 @@
     align-items: center;
     border-bottom: 1px solid black;
     padding-bottom: 1vh;
-    background-color: rgb(36, 173, 77)
+    background-color: rgb(38 173 36 / 66%);
+    font-size: xx-large;
 }
 .logo-img{
     height: 7vw;
@@ -19,7 +20,8 @@
     position: absolute;
     z-index: 2;
     font-size: xx-large;
-    top: 4vh;
+    font-size: xxx-large;
+    top: 2vh;
     left: 17vw;
     /* bottom: 76vh; */
     text-shadow: 2px 2px 0px #ffffff, -2px -2px 0px #fff, 2px -2px 0px #fff, -2px 2px 0px #fff;
@@ -48,7 +50,7 @@
 }
 .circle{
     width: 45%;
-    background-color: rgb(36, 173, 77);
+    background-color: rgb(36 173 77 / 43%);
     height: 110%;
     border-radius: 50%;
     overflow: overlay;
@@ -61,7 +63,7 @@
     align-items: center;
 }
 .circe-text{
-    font-size: x-large;
+    font-size: xx-large;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     margin: 13px
@@ -74,6 +76,7 @@
 }
 .top-catogry{
     padding: 5vh;
+    font-size: xx-large;
 /* background-color: blueviolet; */
 }
 .catogrey-card{
@@ -90,12 +93,12 @@
     border: 0.5px solid gray;
 }
 div.catogrey-card p {
-    font-size: small;
+    font-size: x-large;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
 }
 div.top-menu p {
-    font-size: large;
+    font-size: xx-large;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
     align-items: center;
@@ -180,7 +183,7 @@ div.top-menu p {
     /* background-color: green; */
 }
 .footer{
-    background-color: rgb(36, 173, 77);
+    background-color: rgb(103 235 17 / 70%);
     justify-content: center;
     display: grid;
     align-items: center;
@@ -188,7 +191,7 @@ div.top-menu p {
     position: relative;
     bottom: -45px;
     width: 100%;
-    border-top: 3px solid black;
+    border-top: 1px solid black;
 }
 .footer-item{
     display: flex;
