@@ -20,18 +20,27 @@ function slideshow() {
 document.addEventListener("DOMContentLoaded", () => {
     const drawer = document.querySelector(".drawer");
     const toggleBtn = document.getElementById("toggle-btn");
-    
+    const closeBtn=document.getElementById("close-drawer-btn")
   
+    const computedStyle = window.getComputedStyle(drawer);
+    const leftValue = computedStyle.getPropertyValue("left");
+
     // Function to toggle the drawer
     function toggleDrawer() {
-      if (drawer.style.left === "-300px") {
-        drawer.style.left = "0";
-      } else {
-        drawer.style.left = "-300px";
-      }
+      setTimeout(() => {
+    const computedStyle = window.getComputedStyle(drawer);
+    const leftValue = computedStyle.getPropertyValue("left");
+
+    if (leftValue === "-300px") {
+      drawer.style.left = "0";
+    } else {
+      drawer.style.left = "-300px";
+    }
+  }, 100); 
     }
   
     // Event listener for the toggle button
     toggleBtn.addEventListener("click", toggleDrawer);
+    closeBtn.addEventListener("click", toggleDrawer);
   });
   
