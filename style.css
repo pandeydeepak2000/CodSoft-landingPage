@@ -134,7 +134,10 @@ div.top-menu p {
     align-items: center;
     padding: 3vh;
     overflow: hidden;
-
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px; */
 }
 
 .slider {
@@ -259,7 +262,7 @@ div.top-menu p {
     position: absolute;
     top: 0;
     left: -300px;
-    transition: left 0.3s ease;
+    transition: left 0.5s ease;
     display: none;
 
 }
@@ -283,11 +286,27 @@ div.top-menu p {
         z-index: 5;
         position: absolute;
         height: auto;
+        background-color: rgb(36 173 77 );
+
     }
     #toggle-btn{
         margin: 0;
         padding: 0;
         height: 7vh;
+        background-color: transparent;
+        border: 0;
+        color: #fff;
+        font-size: x-large;
+        
+    }
+    #close-drawer-btn{
+        align-self: flex-end;
+        border: 0;
+        background-color: transparent;
+        fill: #b46b6b;
+        color: #FFF;
+        font-size: x-large;
+        font-weight: bolder;
     }
    
     .Fresh {
@@ -309,28 +328,30 @@ div.top-menu p {
     .category-cards-container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        padding:0 ;
+        justify-content: space-evenly;
+        padding: 10px;
       }
  
       .catogrey-card{
         height: 30vh;
         width: 23vh;
-       
+        margin:5px;
 
       }
 
     .slider {
-        background-image: url(./assets/imageFloder/slider-main.jpg);
+        background-image: none;
         width: 100%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
         height: 10vh;
         padding-bottom: 35%;
+        align-items: center;
+        justify-content: center;
         /* height: ; */
     }
+    .slide-show{
+        justify-content: center;
 
+    }
     .circe-text {
         font-size: inherit;
         font-family: 'Courier New', Courier, monospace;
@@ -351,25 +372,20 @@ div.top-menu p {
     }
 
     .slide-image {
-        border: 3px solid #7d7575;
-        background-size: cover;
-        object-fit: cover;
         overflow: hidden;
         height: 29vh;
         justify-self: center;
         align-self: center;
-        /* padding-block: 4vh; */
         border-radius: 6vh;
         margin-left: 1vw;
-        margin-block: 1vh;
-        transition: opacity 1s ease;
     }
 
     .circle {
-        width: 80%;
-    background-color: rgba(36, 173, 77, 0.43);
-    height: 80%;
-    border-radius: 50%;
+        
+    width: 87%;
+    background-color: rgba(36, 173, 77, 0.5);
+    height: 100%;
+    border-radius: 60%;
     overflow: hidden;
     transform: translateX(-16vw);
     /* transform: translateY(10px); */
@@ -378,7 +394,8 @@ div.top-menu p {
     flex-direction: column;
     justify-content: center;
     align-items: 'center';
-    margin-top: 80px;
+    margin-top: 35px;
+
     }
 
     .tabs {
@@ -392,6 +409,11 @@ div.top-menu p {
         display: flex;
         background-color: rgba(38, 173, 36, 0.66);
         flex-direction: row;
+    }
+    .nav-text {
+        color: #fff;
+        font-size: 1em;
+        text-decoration: underline;
     }
 
     .main-content {
@@ -410,13 +432,13 @@ div.top-menu p {
         text-shadow: 2px 2px 0px #ffffff, -2px -2px 0px #fff, 2px -2px 0px #fff, -2px 2px 0px #fff;
         font-family: 'Borel', cursive;
         /* background-color: #b63636; */
-        margin: 10px;
-        top: -9px;
-        left: 90px;
-        align-self: center;
-        font-size: xx-large;
         justify-content: center;
         align-content: space-around;
+        top: 0;
+        margin: 4%;
+        left: 105px;
+        align-self: center;
+        font-size: xx-large;
     }
 
     .menu-img {
