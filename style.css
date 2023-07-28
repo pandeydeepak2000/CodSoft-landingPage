@@ -373,11 +373,12 @@ div.top-menu p {
 
     .slide-image {
         overflow: hidden;
-        height: 29vh;
+        height: 35vh;
         justify-self: center;
         align-self: center;
         border-radius: 6vh;
         margin-left: 1vw;
+        margin: 0;
     }
 
     .circle {
