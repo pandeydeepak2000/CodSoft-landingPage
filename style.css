@@ -302,19 +302,23 @@ div.top-menu p {
     }
 
     .top-catogry {
-        padding: 3vh;
+        padding: 0vh;
         font-size: x-large;
         /* background-color: blueviolet; */
     }
-
     .category-cards-container {
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        padding: 0;
-        overflow: hidden;
-    }
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding:0 ;
+      }
+ 
+      .catogrey-card{
+        height: 30vh;
+        width: 23vh;
+       
+
+      }
 
     .slider {
         background-image: url(./assets/imageFloder/slider-main.jpg);
