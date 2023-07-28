@@ -16,4 +16,22 @@ function slideshow() {
   document.addEventListener("DOMContentLoaded", () => {
     slideshow();
   });
+  // JavaScript to handle the drawer toggle
+document.addEventListener("DOMContentLoaded", () => {
+    const drawer = document.querySelector(".drawer");
+    const toggleBtn = document.getElementById("toggle-btn");
+    
+  
+    // Function to toggle the drawer
+    function toggleDrawer() {
+      if (drawer.style.left === "-300px") {
+        drawer.style.left = "0";
+      } else {
+        drawer.style.left = "-300px";
+      }
+    }
+  
+    // Event listener for the toggle button
+    toggleBtn.addEventListener("click", toggleDrawer);
+  });
   
